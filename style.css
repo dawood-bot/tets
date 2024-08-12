@@ -1,0 +1,124 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.name {
+  color: blue;
+}
+
+.tile-image {
+  float: left;
+  height: 200px;
+  margin: 50px;
+}
+
+.left {
+  float: left;
+  width: calc(50% - 20px); /* Adjust the width to fit two cards per row */
+  margin: 10px; /* Margin between cards */
+}
+
+.right {
+  float: right;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%; /* Make video responsive to card width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%; /* Full width for each card on small screens */
+    float: none; /* Remove floating */
+  }
+
+  .card {
+    width: 100%; /* Full width for each card on small screens */
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .card-text {
+    padding-top: 100px;
+  }
+
+  .elegant {
+    background: url('path/to/floral-background.jpg') no-repeat center center; /* Floral background image */
+    background-size: cover;
+    color: #ffffff;
+    border: 2px solid #e94e77; /* Border color */
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .elegant .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f7c6c7;
+    font-weight: 700;
+  }
+  
+  .elegant .card-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-style: italic;
+  }
+  
+}
